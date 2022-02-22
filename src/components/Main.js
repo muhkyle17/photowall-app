@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import Photowall from './Photowall'
+import PhotoWall from './PhotoWall'
 
 class Main extends Component {
   constructor() {
@@ -42,7 +42,7 @@ class Main extends Component {
     return (
       <div>
         <Title title={['Photowall']} />
-        <Photowall posts={this.state.posts} onRemovePhoto={this.removePhoto} />
+        <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} />
       </div>
     )
   }
